@@ -4,7 +4,7 @@ module.exports = function (app) {
     var bodyParser = require('body-parser');
     app.use(bodyParser.json());
     var formidable = require('formidable');
-    app.use(formidable.parse());
+    //app.use(formidable.parse());
     util = require('util');
 
     //Twilio Integration
