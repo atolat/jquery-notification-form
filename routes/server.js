@@ -10,8 +10,9 @@ module.exports = function (app) {
 
     //API ROOT
     app.get('/', function (req, res) {
-        res.send('API Root');
+        res.sendfile('./form.html');
     });
+    
 
     app.post('/formdata', function (req, res) {
         res.json(req.body);
