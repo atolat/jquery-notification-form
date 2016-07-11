@@ -1,7 +1,7 @@
 //new server
 var express = require('express');
 var app = express();
-var routes = require('./routes/server')(app);
+//var routes = require('./routes/server')(app);
 var PORT = process.env.PORT || 3000;
 
 allowCrossDomain = function (req, res, next) {
