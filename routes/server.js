@@ -34,7 +34,7 @@ module.exports = function (app) {
 
         client.sendMessage({
 
-            to: '+13058733188', // Any number Twilio can deliver to
+            to: '+19493000798', // Any number Twilio can deliver to
             from: '+19492200716', // A number you bought from Twilio and can use for outbound communication
             body: 'Name: ' + name + '\nEmail: ' + email + '\nPhone Number: ' + phnum // body of the SMS message
 
