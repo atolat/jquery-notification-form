@@ -14,6 +14,6 @@ module.exports = function (app) {
     });
 
     app.post('/formdata', function (req, res) {
-        res.json(req);
+        res.json(req.body);
     });
     }
