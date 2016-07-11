@@ -26,7 +26,7 @@ FavColor: <input type="text" name="favc"><br>
                 url: 'https://immense-basin-81065.herokuapp.com/formdata', // url where to submit the request
                 type : "POST", // type of action POST || GET
                 dataType : 'json', // data type
-                data : $("#form").serialize(), // post data || get data
+                data : $("form").serialize(), // post data || get data
                 success : function(result) {
                     // you can see the result from the console
                     // tab of the developer tools
