@@ -3,7 +3,7 @@ module.exports = function (app) {
     var _ = require('underscore');
     var bodyParser = require('body-parser');
     app.use(bodyParser.json());
-    var formidable = require('express-formidable');
+    var formidable = require('formidable');
     app.use(formidable.parse());
     util = require('util');
 
