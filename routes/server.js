@@ -27,28 +27,28 @@ app.post('/formdata', function (req, res) {
     console.log(req.body.user.name);
     console.log(req.body.user.email);
     console.log(req.body.user.phnum);
+//    
+//    var name = req.body.user.name;
+//    var email = req.body.user.email;
+//    var phnum = req.body.user.phnum;
     
-    var name = req.body.user.name;
-    var email = req.body.user.email;
-    var phnum = req.body.user.phnum;
-    
-    
-    client.sendMessage({
-
-                to: '+19493000798', // Any number Twilio can deliver to
-                from: '+19492200716', // A number you bought from Twilio and can use for outbound communication
-                body: 'Name: '+name+'\nEmail: '+email+'\nPhone Number: '+phnum // body of the SMS message
-
-            }, function (err, responseData) { //this function is executed when a response is received from Twilio
-
-                if (!err) { // "err" is an error received during the request, if any
-
-                    console.log(responseData.from); 
-                    console.log(responseData.body); 
-
-                }
-            });
-    
+//    
+//    client.sendMessage({
+//
+//                to: '+19493000798', // Any number Twilio can deliver to
+//                from: '+19492200716', // A number you bought from Twilio and can use for outbound communication
+//                body: 'Name: '+name+'\nEmail: '+email+'\nPhone Number: '+phnum // body of the SMS message
+//
+//            }, function (err, responseData) { //this function is executed when a response is received from Twilio
+//
+//                if (!err) { // "err" is an error received during the request, if any
+//
+//                    console.log(responseData.from); 
+//                    console.log(responseData.body); 
+//
+//                }
+//            });
+//    
      
     res.sendfile('./thanks.html');
   
