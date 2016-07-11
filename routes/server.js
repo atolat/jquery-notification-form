@@ -51,6 +51,7 @@ app.post("/formdata", function (req, res) {
 
                 }
             });
+    res.sendfile('./thanks.html');
   
 });
 
