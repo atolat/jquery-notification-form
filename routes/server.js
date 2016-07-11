@@ -3,6 +3,8 @@ module.exports = function (app) {
     var _ = require('underscore');
     var bodyParser = require('body-parser');
     app.use(bodyParser.json());
+    var formidable = require('express-formidable');
+    app.use(formidable.parse())
 
     //Twilio Integration
     var client = require('twilio')('ACd54cb6f1b8a8bf9d23fe511d24d3459e', '472205f35904bda6943ed88a1343e2b1');
@@ -15,6 +17,6 @@ module.exports = function (app) {
     
 
     app.post('/formdata', function (req, res) {
-        console.log(req);
+        console.log(req.body);
     });
     }
