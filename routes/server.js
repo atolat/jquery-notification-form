@@ -15,16 +15,19 @@ module.exports = function (app) {
     app.get('/', function (req, res) {
         res.sendfile('./form.html');
     });
-    
 
-    app.post('/formdata', function (req, res) {
-        var form = new formidable.IncomingForm();
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
-    form.parse(req, function(err, fields, files) {
-      res.writeHead(200, {'content-type': 'text/plain'});
-      res.write('received upload:\n\n');
-      res.end(util.inspect({fields: fields, files: files}));
-    });
+/**bodyParser.json(options)
+ * Parses the text as JSON and exposes the resulting object on req.body.
+ */
+app.use(bodyParser.json());
+
+app.post("/formdata", function (req, res) {
+    console.log(req.body.user.name)
+});
 
     });
     }

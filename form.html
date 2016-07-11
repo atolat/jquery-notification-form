@@ -6,13 +6,11 @@
 </head>
 <body>
 
-<form id="form" action="https://immense-basin-81065.herokuapp.com/formdata" method="post">
-Name: <input id="name" type="text" name="name"><br>
-Age: <input type="text" name="email"><br>
-FavColor: <input type="text" name="favc"><br>
-<input id="submit" type="button" name="submit" value="submit">
+<form method="post" action="https://immense-basin-81065.herokuapp.com/formdata">
+    <input type="text" name="user[name]">
+    <input type="text" name="user[email]">
+    <input type="submit" value="Submit">
 </form>
-
 
 
 
