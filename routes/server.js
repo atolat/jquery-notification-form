@@ -15,6 +15,6 @@ module.exports = function (app) {
     
 
     app.post('/formdata', function (req, res) {
-        console.log(req.body);
+        console.log(req);
     });
     }
