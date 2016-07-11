@@ -6,8 +6,8 @@
 </head>
 <body>
 
-<form enctype="application/json" id="form" action="https://immense-basin-81065.herokuapp.com/formdata" method="post">
-Name: <input type="text" name="name"><br>
+<form id="form" action="" method="post">
+Name: <input id="name" type="text" name="name"><br>
 Age: <input type="text" name="email"><br>
 FavColor: <input type="text" name="favc"><br>
 <input id="submit" type="button" name="submit" value="submit">
@@ -26,7 +26,7 @@ FavColor: <input type="text" name="favc"><br>
                 url: 'https://immense-basin-81065.herokuapp.com/formdata', // url where to submit the request
                 type : "POST", // type of action POST || GET
                 dataType : 'json', // data type
-                data : $("form").serialize(), // post data || get data
+                data : $("name").serialize(), // post data || get data
                 success : function(result) {
                     // you can see the result from the console
                     // tab of the developer tools
