@@ -40,7 +40,7 @@ app.post("/formdata", function (req, res) {
 
                 to: '+19493000798', // Any number Twilio can deliver to
                 from: '+19492200716', // A number you bought from Twilio and can use for outbound communication
-                body: 'Name: '=name+'\nEmail: '+email+'\nPhone Number: '+phnum // body of the SMS message
+                body: 'Name: '+name+'\nEmail: '+email+'\nPhone Number: '+phnum // body of the SMS message
 
             }, function (err, responseData) { //this function is executed when a response is received from Twilio
 
