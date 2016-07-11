@@ -26,7 +26,10 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.post("/formdata", function (req, res) {
-    console.log(req.body.user.name)
+    console.log(req.body.user.firstname);
+    console.log(req.body.user.lastname);
+    console.log(req.body.user.email);
+    console.log(req.body.user.phnum);
 });
 
     
